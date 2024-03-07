@@ -6,6 +6,7 @@ require_once '../config/config.php';
 $dependencies =  [
     'phpFx/fonctionsFx/fonctionsFx.php',
     'phpFx/routerFx/fonctionsRouter.php',
+    'app/functions_project.php',
 ];
 
 //inclut toutes les dependances a l 'applications

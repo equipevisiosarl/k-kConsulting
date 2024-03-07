@@ -3,11 +3,7 @@ $template = 'base';
 ob_start();
 
 ?>
-
-
-    <h1>Welcome to PHPFx</h1>
-
- 
+<?php include viewComponent('apropos/qsn') ?>
 <?php 
 
 $content = ob_get_clean();

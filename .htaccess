@@ -1,0 +1,9 @@
+<IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+</IfModule>
+
+RewriteEngine on
+
+#RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ public/index.php?url=$1 [QSA,L]

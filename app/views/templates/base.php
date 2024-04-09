@@ -1,3 +1,5 @@
+<?php $url = get_url() ; ($url == "" )? $baniere = 'hero': $baniere ="beadcrump" ; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +10,7 @@
 
 <body>
     <?php include viewComponent('header') ?>
-    <?php include viewComponent('hero') ?>
+    <?php include viewComponent($baniere) ?>
     <main id="main">
         <?= $content ?>
     </main>

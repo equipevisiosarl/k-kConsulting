@@ -19,7 +19,7 @@
  ];
  $partenariat = [
     'path' => 'a-propos/partenariat',
-    'name' => 'Partenairiat',
+    'name' => 'Partenariat',
  ];
  $a_propos = [
     'path' => 'a-propos',
@@ -83,7 +83,7 @@
                          <li><a class="<?= $active  ?>" href="<?= URL.$menu['path']  ?>"><?= $menu['name']  ?></a></li> 
                      <?php else : ?>
 
-                         <li class="dropdown <?= $active  ?>"><a href="#"><span><?= $menu['name']  ?></span> <i class="bi bi-chevron-down"></i></a>
+                         <li class="dropdown <?= $active  ?>"><a href="../#"><span><?= $menu['name']  ?></span> <i class="bi bi-chevron-down"></i></a>
                              <ul>
                                  <?php foreach ($menu['items'] ?? [] as $item) :  ?>
                                  <li><a href="<?=URL. $item['path']  ?>"><?= $item['name']  ?></a></li>

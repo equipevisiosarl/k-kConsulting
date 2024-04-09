@@ -1,13 +1,12 @@
 <?php 
 $template = 'base';
+$TITRE = 'A Propos';
+$DESCRIPTION = 'Description';
 ob_start();
 
 ?>
-
-<?php include viewComponent('apropos/counter_stat') ?>
 <?php include viewComponent('apropos/qsn') ?>
-<?php include viewComponent('apropos/partenaires') ?>
-<?php include viewComponent('contact') ?>
+<?php include viewComponent('apropos/counter_stat') ?>
 <?php 
 
 $content = ob_get_clean();

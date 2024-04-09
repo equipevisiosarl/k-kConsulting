@@ -7,7 +7,7 @@ function  loadView($view, array $data = [])
 { // charge une vue
     $output = ['output' => 'view', 'view' => $view, 'data' => $data];
     $app = new Render($output, $data);
-    return $view = $app->Render_view();
+    return $view = $app->Render_view(); 
 }
 
 function  loadController($controller, $action)

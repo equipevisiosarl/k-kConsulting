@@ -28,28 +28,18 @@
     'items' => [$qsn, $equipe, $consultants, $partenariat],
  ];
 
- $formations_certifiante =[
-    'path' => 'formations/formations-certifiante',
-    'name' => 'Formations Certifiante',
- ];
- $coaching =[
-    'path' => 'formations/coaching',
-    'name' => 'Coaching',
- ];
- $formations_fdfp =[
-    'path' => 'formations/formations-FDFP',
-    'name' => 'Formations FDFP',
- ];
- $seminaires =[
-    'path' => 'formations/seminaires',
-    'name' => 'Seminaires',
- ];
+ 
  $formations = [
     'path' => 'formations',
     'name' => 'Formations',
-    'type' => 'dropdown',
-    'items' => [$formations_certifiante, $coaching, $formations_fdfp, $seminaires],
+    'type' => 'single',
  ];
+
+ $sepat = [
+   'path' => 'sepat',
+   'name' => 'SEPAT',
+   'type' => 'single',
+];
 
  $realisations = [
     'path' => 'realisations',
@@ -63,7 +53,15 @@
     'type' => 'single',
  ];
 
- $menus = [$accueil, $a_propos, $formations, $realisations, $contact]
+ $menus = [$accueil, $a_propos, $formations, /*$realisations,*/$sepat, $contact];
+
+ $liens_utiles = [
+   ['lien'=>$sepat['path'], 'name'=>$sepat['name']],
+   ['lien'=>$qsn['path'], 'name'=>$a_propos['name']],
+   ['lien'=>$formations['path'], 'name'=>$formations['name']],
+   ['lien'=>$realisations['path'], 'name'=>$realisations['name']],
+   ['lien'=>$contact['path'], 'name'=>$contact['name']]
+ ];
  
  ?>
  

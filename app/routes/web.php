@@ -1,6 +1,8 @@
 <?php
 
+use app\controllers\FormationsController;
 use app\controllers\HumainController;
+use app\controllers\SepatController;
 use phpFx\routerFx\Router;
 
 Router::addRoute('GET', '/', function (){ loadView('pages/Welcome'); });
@@ -9,5 +11,7 @@ Router::addRoute('GET', '/contact', function (){ loadView('pages/contact'); });
 Router::addRoute('GET', '/a-propos/equipe',  loadController(HumainController::class, 'index'));
 Router::addRoute('GET', '/a-propos/consultants',  loadController(HumainController::class, 'consultants'));
 Router::addRoute('GET', '/a-propos/partenariat', function (){ loadView('pages/partenariat'); });
+Router::addRoute('GET', '/formations',  loadController(FormationsController::class, 'index'));
+Router::addRoute('GET', '/sepat',  loadController(SepatController::class, 'index'));
 
 

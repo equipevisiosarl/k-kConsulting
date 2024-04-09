@@ -20,11 +20,13 @@ define("WEBSITE_FACEBOOK_DESCRIPTION", "");
 define("WEBSITE_FACEBOOK_URL", "");
 define("WEBSITE_FACEBOOK_IMAGE", "");
 
-$fxnumero = '<a href="tel:+12157150706">+1 215 7150706</a>';
-$fxemail = '';
+$fxnumero = '<a href="tel:+2250748117720">+225 0748117720</a>';
+$fxnumero2 = '<a href="tel:+2250566463276">+225 0566463276</a>';
+$fxemail = 'info@k-kconsulting.com';
 define("WEBSITE_NUM", $fxnumero );
+define("WEBSITE_NUM2", $fxnumero2 );
 define("WEBSITE_EMAIL", '<a href="mailto:'.$fxemail.'">'.$fxemail.'</a>');
-define("WEBSITE_ADDRESS", 'A108 Adam Street, New York, NY 535022');
+define("WEBSITE_ADDRESS", 'Abidjan , Cocody, Riviera Palmeraie, 06 BP 2099 Abidjan');
 
 if ((empty($_SERVER['SERVER_NAME']) && php_sapi_name() == 'cli') || (!empty($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == 'localhost')) {
     /** database config **/
@@ -44,7 +46,7 @@ if ((empty($_SERVER['SERVER_NAME']) && php_sapi_name() == 'cli') || (!empty($_SE
     define('DBPASS', '');
     define('DBDRIVER', '');
 
-    define('ROOT', 'https://www.yourwebsite.com');
+    define('ROOT', 'https://www.k-kconsulting.com/');
     define('URL', ROOT);
 }
 

@@ -1,6 +1,6 @@
  <!-- ======= Contact Section ======= -->
  <section id="contact" class="contact">
-     
+
      <div class="container" data-aos="fade-up">
 
 
@@ -11,19 +11,20 @@
                      <div class="address">
                          <i class="bi bi-geo-alt"></i>
                          <h4>Localisation:</h4>
-                         <p>A108 Adam Street, New York, NY 535022</p>
+                         <p><?= WEBSITE_ADDRESS  ?></p>
                      </div>
 
                      <div class="email">
                          <i class="bi bi-envelope"></i>
                          <h4>Email:</h4>
-                         <p>info@example.com</p>
+                         <p><?= WEBSITE_EMAIL  ?></p>
                      </div>
 
                      <div class="phone">
                          <i class="bi bi-phone"></i>
                          <h4>Téléphone:</h4>
-                         <p>+1 5589 55488 55s</p>
+                         <p><?= WEBSITE_NUM  ?></p>
+                         <p><?= WEBSITE_NUM2  ?></p>
                      </div>
 
                  </div>
@@ -42,7 +43,7 @@
                          </div>
                      </div>
                      <div class="form-group mt-3">
-                         <input type="text" class="form-control" name="subject" id="subject" value="Demande de partenariat"  required>
+                         <input type="text" class="form-control" name="subject" id="subject" value="Demande de partenariat" required>
                      </div>
                      <div class="form-group mt-3">
                          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
